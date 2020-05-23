@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    height: 100vh;
+}
+h1{
+    margin-top: 10px;
+    color: aquamarine;
+    text-align: center;
+}
+.sub-h{
+    font-size: 24px;
+    text-align: center;
+}
+.container{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.p-link{
+    text-align: center;
+    font-size: 20px;
+}
