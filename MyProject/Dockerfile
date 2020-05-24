@@ -2,11 +2,11 @@ FROM python:latest
 
 MAINTAINER Stef sstefin@bk.ru
 
-COPY requirements.txt /app
+COPY requirements.txt /app/
+
+WORKDIR ./app
 
 RUN pip install -r requirements.txt
-
-WORKDIR /app
 
 EXPOSE 8000
 
