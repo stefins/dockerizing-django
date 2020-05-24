@@ -1,0 +1,19 @@
+version:'3'
+
+services:
+  db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ./database:/var/lib/postgresql/data
+  website:
+    build: ./MyProject
+    volumes:
+      - ./MyProject:/app
+    ports:
+      - 80:8000
+    depends_on:
+      - db
