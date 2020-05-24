@@ -4,7 +4,7 @@ MAINTAINER Stef sstefin@bk.ru
 
 COPY requirements.txt /app/
 
-WORKDIR ./app
+WORKDIR ./app/
 
 RUN pip install -r requirements.txt
 
