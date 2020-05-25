@@ -71,7 +71,7 @@ coverage.xml
 *.cover
 .hypothesis/
 .pytest_cache/
-
+ nginx/ssl/*
 # Translations
 *.mo
 
