@@ -36,6 +36,16 @@ Open port 80 and 443
 docker-compose build
 docker-compose up -d
 ```
+
+## Making migrations and other stuff
+
+```bash
+docker exec -it dockerizing-django_website_1 bash
+python manage.py migrate
+python manage.py collectstatic
+python manage.py createsuperuser
+```
+
 ## Contributing
 
 Feel free to make this code better :)
