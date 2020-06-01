@@ -41,6 +41,7 @@ docker-compose up -d
 
 ```bash
 docker exec -it dockerizing-django_website_1 bash
+python manage.py makemigrations
 python manage.py migrate
 python manage.py collectstatic
 python manage.py createsuperuser
