@@ -12,6 +12,9 @@ services:
     build: ./MyProject
     volumes:
       - ./MyProject:/app
+    command: >
+      sh -c "python manage.py wait_for_database &&
+             gunicorn MyProject.wsgi -b :8000"
     depends_on:
       - db
   nginxweb:

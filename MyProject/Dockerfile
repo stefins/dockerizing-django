@@ -9,5 +9,3 @@ WORKDIR ./app/
 RUN pip install -r requirements.txt
 
 EXPOSE 8000
-
-CMD gunicorn MyProject.wsgi -b :8000
