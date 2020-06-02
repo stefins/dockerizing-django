@@ -14,7 +14,7 @@ Place your project in the **MyProject** directory
 
 Go to `settings.py` and change the `DATABASE` section matching your credentials in `docker-compose.yml`
 
-This project uses WhiteNoise to serve static files
+This project uses `WhiteNoise` to serve static files and `django-probes` for checking database connection
 
 ## SSL Certificate for https
 
