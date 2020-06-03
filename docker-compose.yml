@@ -14,6 +14,9 @@ services:
       - ./MyProject:/app
     command: >
       sh -c "python manage.py wait_for_database &&
+             python manage.py makemigrations &&
+             python manage.py migrate &&
+             python manage.py collectstatic --no-input &&
              gunicorn MyProject.wsgi -b :8000"
     depends_on:
       - db
