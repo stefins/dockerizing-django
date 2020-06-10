@@ -1,5 +1,8 @@
 # Dockerize Your Django Project
 [![Build Status](https://travis-ci.com/IamStefin/dockerizing-django.svg?branch=master)](https://travis-ci.com/IamStefin/dockerizing-django)
+[![GitHub license](https://img.shields.io/github/license/IamStefin/dockerizing-django)](https://github.com/IamStefin/dockerizing-django/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/IamStefin/dockerizing-django)](https://github.com/IamStefin/dockerizing-django/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/IamStefin/dockerizing-django)](https://github.com/IamStefin/dockerizing-django/issues)
 
 This repo will give you the basic configuration for setting docker for your django project
 
