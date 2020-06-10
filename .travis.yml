@@ -1,5 +1,5 @@
 env:
-  - DOCKER_COMPOSE_VERSION: 1.8.0
+  - DOCKER_COMPOSE_VERSION: 3.8
 before_install:
   - sudo apt-get update# Now we can install the newer docker-engine which is required for the newer
   - sudo apt-get install -o Dpkg::Options::="--force-confold" --force-yes -y docker-engine# Print out the current docker-compose version. Once this reports 1.6+ then we
