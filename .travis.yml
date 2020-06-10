@@ -13,8 +13,11 @@ before_install:
   - sudo mv docker-compose /usr/local/bin
   - sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
-script:
+before_script:
   - docker-compose up -d --build
+
+script:
+  - docker-compose ps
 
 after_script:
   - docker-compose down
