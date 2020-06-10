@@ -1,14 +1,14 @@
 env:
   - DOCKER_COMPOSE_VERSION: 3.8
 before_install:
-  - sudo apt-get update# Now we can install the newer docker-engine which is required for the newer
-  - sudo apt-get install -o Dpkg::Options::="--force-confold" --force-yes -y docker-engine# Print out the current docker-compose version. Once this reports 1.6+ then we
-  - docker-compose --version# As of the writing of this script Travis has docker-compose v1.4.2, we need
+  - sudo apt-get update
+  - sudo apt-get install -o Dpkg::Options::="--force-confold" --force-yes -y docker-engine
+  - docker-compose --version
   - sudo rm /usr/local/bin/docker-compose
   - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
   - chmod +x docker-compose
-  - sudo mv docker-compose /usr/local/bin# Check that docker-compose is now running the latest version (or at least the
-  - docker-compose --version# Setup your application stack. You may need to tweak these commands if you
+  - sudo mv docker-compose /usr/local/bin
+  - docker-compose --version
   - docker-compose pull
   - docker-compose build
   - docker-compose start
