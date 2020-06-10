@@ -1,4 +1,5 @@
 # Dockerize Your Django Project
+[![Build Status](https://travis-ci.com/IamStefin/dockerizing-django.svg?branch=master)](https://travis-ci.com/IamStefin/dockerizing-django)
 
 This repo will give you the basic configuration for setting docker for your django project
 
