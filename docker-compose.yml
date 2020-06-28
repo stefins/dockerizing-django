@@ -22,7 +22,7 @@ services:
       - db
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.website.rule=Host(`57ef.xyz`)"
+      - "traefik.http.routers.website.rule=Host(`example.com`)"
       - "traefik.http.routers.website.entrypoints=websecure"
       - "traefik.http.routers.website.tls.certresolver=myresolver"
       - "traefik.http.services.website.loadbalancer.server.port=8001"
@@ -38,7 +38,7 @@ services:
       - "--entrypoints.websecure.address=:443"
       - "--certificatesresolvers.myresolver.acme.tlschallenge=true"
       #- "--certificatesresolvers.myresolver.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory"
-      - "--certificatesresolvers.myresolver.acme.email=sstefin@bk.ru"
+      - "--certificatesresolvers.myresolver.acme.email=yourmail@mail.com"
       - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
     ports:
       - "443:443"
