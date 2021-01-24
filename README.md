@@ -11,7 +11,7 @@ This repo will give you the basic configuration for setting docker for your djan
 Clone this repository in your working directory
 
 ```bash
-git clone https://github.com/IamStefin/dockerizing-django.git
+git clone https://github.com/stefins/dockerizing-django.git
 ```
 
 Place your project in the **MyProject** directory
